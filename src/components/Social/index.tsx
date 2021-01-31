@@ -8,8 +8,14 @@ interface SocialProps extends React.HTMLProps<HTMLAnchorElement> {
 
 function Social({ name, Icon, link, className = '', ...props }: SocialProps) {
   return (
-    <a href={link} target="_blank" rel="nofollow noopener noreferrer" className={`${className}`} {...props}>
-      <Icon title={name} />
+    <a
+      href={link}
+      target="_blank"
+      rel="nofollow noopener noreferrer"
+      className={`text-primary-blue hover:text-primary-red focus-visible:text-primary-red transition-colors ${className}`}
+      {...props}
+    >
+      <Icon title={name} fill="currentColor" />
     </a>
   )
 }

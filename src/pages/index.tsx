@@ -9,11 +9,15 @@ import Social from '@/components/Social'
 
 function IndexPage() {
   return (
-    <main>
+    <div className="min-h-screen flex flex-col">
       <Seo title="Frontend Mentor: Launch countdown timer" />
-      <h1>We’re launching soon</h1>
-      <Countdown days={14} hours={0} minutes={0} seconds={0} />
-      <footer>
+      <main className="flex-grow grid place-items-center bg-stars bg-no-repeat bg-cover mb-8 px-6 pt-33">
+        <div className="max-w-container text-center">
+          <h1 className="uppercase text-lg sm:text-heading tracking-heading mb-13 sm:mb-26">We’re launching soon</h1>
+          <Countdown days={14} hours={0} minutes={0} seconds={0} />
+        </div>
+      </main>
+      <footer className="px-6 pt-24 sm:pt-25 pb-12 sm:pb-19 bg-hills bg-no-repeat bg-cover">
         <h2 className="sr-only">Socials</h2>
         <Socials>
           <Social name="Facebook" Icon={IconFacebook} link="https://facebook.com" />
@@ -21,7 +25,7 @@ function IndexPage() {
           <Social name="Instagram" Icon={IconInstagram} link="https://instagram.com" />
         </Socials>
       </footer>
-    </main>
+    </div>
   )
 }
 
