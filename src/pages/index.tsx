@@ -12,7 +12,7 @@ function IndexPage() {
     <div className="min-h-screen flex flex-col">
       <Seo title="Frontend Mentor: Launch countdown timer" />
       <main className="flex-grow grid place-items-center bg-stars bg-no-repeat bg-cover mb-8 px-6 pt-33">
-        <div className="max-w-container text-center">
+        <div className="max-w-container w-full text-center">
           <h1 className="uppercase text-lg sm:text-heading tracking-heading mb-13 sm:mb-26">We’re launching soon</h1>
           <Countdown days={14} hours={0} minutes={0} seconds={0} />
         </div>

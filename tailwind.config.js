@@ -40,9 +40,29 @@ module.exports = {
       maxWidth: {
         container: '43rem',
       },
+      height: {
+        card: '8.75rem',
+      },
+      width: {
+        digit: '3.25rem',
+      },
       backgroundImage: {
         stars: 'url(../images/bg-stars.svg)',
         hills: 'url(../images/pattern-hills.svg)',
+      },
+      keyframes: {
+        'old-value': {
+          '0%': { transform: 'rotateX(0deg)' },
+          '100%': { transform: 'rotateX(-180deg)' },
+        },
+        'new-value': {
+          '0%': { transform: 'rotateX(180deg)' },
+          '100%': { transform: 'rotateX(0deg)' },
+        },
+      },
+      animation: {
+        'new-value': 'new-value 1s ease forwards',
+        'old-value': 'old-value 1s ease forwards',
       },
     },
   },
