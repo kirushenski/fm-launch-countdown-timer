@@ -40,14 +40,18 @@ module.exports = {
       },
       maxWidth: {
         container: '43rem',
+        'container-mobile': '20.5rem',
       },
       height: {
         card: '8.75rem',
+        'card-mobile': '4.125rem',
         'card-wrapper': '9.375rem',
+        'card-wrapper-mobile': '4.4375rem',
         line: '.0625rem',
       },
       width: {
         digit: '3.25rem',
+        'digit-mobile': '1.5rem',
       },
       backgroundImage: {
         stars: 'url(../images/bg-stars.svg)',
