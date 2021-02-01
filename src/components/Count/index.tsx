@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import { useSpring, animated } from 'react-spring'
+import { useSpring, animated, config } from 'react-spring'
 import CountCard from '@/components/CountCard'
 
 interface CountProps extends React.HTMLProps<HTMLDivElement> {
@@ -16,7 +16,7 @@ function Count({ type, value, className = '', ...props }: CountProps) {
   }, [value])
 
   const springSettings = {
-    config: { duration: 800 },
+    config: config.slow,
     reset: true,
     immediate: cancelAnimation,
   }

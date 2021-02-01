@@ -14,5 +14,5 @@
 For this challenge:
 
 1. Refreshed in memory Dan Abramov's useInterval hook
-1. Learned how to do complex flip animation
+1. Learned how to make complicated card flip animation
 1. Worked with react-spring (round 2)
