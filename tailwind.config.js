@@ -10,6 +10,7 @@ module.exports = {
       },
       neutral: {
         white: '#fff',
+        black: '#000',
         blue: '#343650',
         'blue-dark': '#1D1E28',
         'blue-darkest': '#191A23',
@@ -42,6 +43,8 @@ module.exports = {
       },
       height: {
         card: '8.75rem',
+        'card-wrapper': '9.375rem',
+        line: '.0625rem',
       },
       width: {
         digit: '3.25rem',
@@ -50,19 +53,8 @@ module.exports = {
         stars: 'url(../images/bg-stars.svg)',
         hills: 'url(../images/pattern-hills.svg)',
       },
-      keyframes: {
-        'old-value': {
-          '0%': { transform: 'rotateX(0deg)' },
-          '100%': { transform: 'rotateX(-180deg)' },
-        },
-        'new-value': {
-          '0%': { transform: 'rotateX(180deg)' },
-          '100%': { transform: 'rotateX(0deg)' },
-        },
-      },
-      animation: {
-        'new-value': 'new-value 1s ease forwards',
-        'old-value': 'old-value 1s ease forwards',
+      backgroundOpacity: {
+        15: '15%',
       },
     },
   },

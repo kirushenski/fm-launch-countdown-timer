@@ -46,20 +46,4 @@
   .x-rotate-180 {
     transform: rotateX(180deg);
   }
-
-  .old-value {
-    @apply top-0 origin-bottom x-rotate-0 animate-old-value;
-  }
-
-  .old-value > div {
-    @apply translate-y-1/2;
-  }
-
-  .new-value {
-    @apply top-1/2 origin-top x-rotate-180 animate-new-value;
-  }
-
-  .new-value > div {
-    @apply -translate-y-1/2;
-  }
 }

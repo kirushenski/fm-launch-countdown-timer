@@ -18,10 +18,12 @@ function Countdown({
   ...props
 }: CountdownProps) {
   const [isRunning, setIsRunning] = useState(true)
-  const [days, setDays] = useState(initialDays)
-  const [hours, setHours] = useState(initialHours)
-  const [minutes, setMinutes] = useState(initialMinutes)
-  const [seconds, setSeconds] = useState(initialSeconds)
+  const [{ days, hours, minutes, seconds }, setCountdown] = useState({
+    days: initialDays,
+    hours: initialHours,
+    minutes: initialMinutes,
+    seconds: initialSeconds,
+  })
 
   useInterval(
     () => {
@@ -43,10 +45,12 @@ function Countdown({
           }
         }
       }
-      setSeconds(newSeconds)
-      if (newMinutes !== undefined) setMinutes(newMinutes)
-      if (newHours !== undefined) setHours(newHours)
-      if (newDays !== undefined) setDays(newDays)
+      setCountdown({
+        days: newDays ?? days,
+        hours: newHours ?? hours,
+        minutes: newMinutes ?? minutes,
+        seconds: newSeconds,
+      })
     },
     isRunning ? 1000 : null
   )
