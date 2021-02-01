@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply font-bold text-sm text-neutral-white bg-neutral-blue-dark;
+    @apply font-bold text-sm text-neutral-white bg-gradient-to-b from-neutral-blue-dark to-neutral-purple;
   }
 
   a:focus {
